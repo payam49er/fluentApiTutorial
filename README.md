@@ -1,4 +1,4 @@
-# fluent Api Tutorial
+# Fluent Api Tutorial
 Using a base interface of IBodmas, create a fluent syntax which would allow me to do the following:
    
    

@@ -4,24 +4,33 @@ namespace BodmasFluentApi
 {
     public static class Extension
     {
-        public static BodMas Add(this int integer)
+        public static IAddValue Add(this int integer, int value)
         {
-            return new BodMas();
+            return new Grammer();
+        }
+        public static IAddValue Add(this int integer,int intVal = 0, IBracketOperation value=null)
+        {
+            return new Grammer();
         }
         
-        public static BodMas Subtract(this int integer)
+        public static IAddValue Add(this int integer, IBracketOperation value=null)
         {
-            return new BodMas();
+            return new Grammer();
+        }
+        
+        public static ISubtractValue Subtract(this int integer,IBracketOperation value=null)
+        {
+            return new Grammer();
         }
 
-        public static BodMas Multiply(this int integer)
+        public static IMultiplyValue Multiply(this int integer,IBracketOperation value=null)
         {
-            return new BodMas();
+            return new Grammer();
         }
 
-        public static BodMas Divide(this int integer)
+        public static IDivideValue Divide(this int integer,IBracketOperation value=null)
         {
-            return new BodMas();
+            return new Grammer();
         }
             
     }

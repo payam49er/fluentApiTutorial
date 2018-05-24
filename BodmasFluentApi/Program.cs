@@ -6,8 +6,12 @@ namespace BodmasFluentApi
     {
         static void Main(string[] args)
         {
-            IBracketOperation bracketOperation = new Grammer();
-            BodMas formula = 4.Add(3.Multiply().Multiply()
+
+
+            var formula = 4.Multiply(3).Add(3);
+
+            int executedValue = BodMas.Execute(formula);
+            string stFormula = BodMas.ToString(formula);
 
         }
     }

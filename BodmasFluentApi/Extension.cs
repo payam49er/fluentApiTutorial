@@ -4,34 +4,34 @@ namespace BodmasFluentApi
 {
     public static class Extension
     {
-        public static IAddValue Add(this int integer, int value)
+        private static Grammer _grammer = new Grammer();
+        public static IAddOrSubtract Add(this int integer, int value)
         {
-            return new Grammer();
+            return _grammer.Add(value);
         }
-        public static IAddValue Add(this int integer,int intVal = 0, IBracketOperation value=null)
+        public static IAddOrSubtract Subtract(this int integer, int value)
         {
-            return new Grammer();
-        }
-        
-        public static IAddValue Add(this int integer, IBracketOperation value=null)
-        {
-            return new Grammer();
-        }
-        
-        public static ISubtractValue Subtract(this int integer,IBracketOperation value=null)
-        {
-            return new Grammer();
+            return _grammer.Subtract(value);
         }
 
-        public static IMultiplyValue Multiply(this int integer,IBracketOperation value=null)
+        public static IMultiplyOrDivide Multiply(this int integer, int value)
         {
-            return new Grammer();
+            return _grammer.Multiply(value);
         }
 
-        public static IDivideValue Divide(this int integer,IBracketOperation value=null)
+        public static IMultiplyOrDivide Divide(this int integer, int value)
         {
-            return new Grammer();
+            return _grammer.Divide(value);
         }
-            
+
+//        public static IMultiplyOrDivide Bracket(this IMultiplyOrDivide multiplyOrDivide,IBracket value)
+//        {
+//            return _grammer.Bracket(value);
+//        }
+//
+//        public static IMultiplyOrDivide Bracket(this IMultiplyOrDivide multiplyOrDivide)
+//        {
+//            return multiplyOrDivide;
+//        }
     }
 }

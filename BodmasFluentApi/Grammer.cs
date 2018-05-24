@@ -1,50 +1,31 @@
 ﻿namespace BodmasFluentApi
 {
-    public class Grammer:IBracketOperation,IAddValue,ISubtractValue,IMultiplyValue,IDivideValue
+    public class Grammer:IMultiplyOrDivide
     {
-        IAddValue IBracketOperation.Add()
+
+        public IAddOrSubtract Add(int value)
         {
             throw new System.NotImplementedException();
         }
 
-        ISubtractValue IBracketOperation.Subtract()
+        public IAddOrSubtract Subtract(int value)
         {
             throw new System.NotImplementedException();
         }
 
-        IMultiplyValue IBracketOperation.Multiply()
+        public IMultiplyOrDivide Multiply(int value)
         {
             throw new System.NotImplementedException();
         }
 
-        IDivideValue IBracketOperation.Div()
+        public IMultiplyOrDivide Divide(int value)
         {
             throw new System.NotImplementedException();
         }
 
-        IBracketOperation IAddValue.Add()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        IBracketOperation ISubtractValue.Subtract()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        IBracketOperation IMultiplyValue.Multiply()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        IBracketOperation IDivideValue.Div()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public int Execute()
-        {
-            
-        }
+//        public IMultiplyOrDivide Bracket(IBracket value)
+//        {
+//            throw new System.NotImplementedException();
+//        }
     }
 }

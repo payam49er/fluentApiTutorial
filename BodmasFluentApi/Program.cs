@@ -6,13 +6,19 @@ namespace BodmasFluentApi
     {
         static void Main(string[] args)
         {
+	        var formula = 4.Multiply(3).Add(3).Subtract(2) as Grammer;
 
+			BodMas bMas = new BodMas();
+			string executedValue = bMas.Execute(formula.Formula);
 
-            var formula = 4.Multiply(3).Add(3);
+			Console.WriteLine($"Calculated value is: {executedValue}");
 
-            int executedValue = BodMas.Execute(formula);
-            string stFormula = BodMas.ToString(formula);
+			string stFormula = bMas.ToString(formula);
 
-        }
+			Console.WriteLine($"Formula is: {stFormula}");
+
+			Console.Read();
+
+        } 
     }
 }

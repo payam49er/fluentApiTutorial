@@ -4,7 +4,8 @@ namespace BodmasFluentApi
 {
     public interface IBodMas
     {
-        string ToString();
-        int Execute();
+	    string ToString(Grammer formula);
+
+		string Execute(string formula);
     }
 }

@@ -1,15 +1,19 @@
-﻿namespace BodmasFluentApi
-{
-    public class BodMas:IBodMas
-    {
-        public int Execute(string formula)
-        {
-            throw new System.NotImplementedException();
-        }
+﻿using System.Data;
 
-        public override string ToString()
-        {
-            return base.ToString();
-        }
-    }
+namespace BodmasFluentApi
+{
+	public class BodMas:IBodMas
+    {
+		public string Execute(string formula)
+	    {
+		    DataTable dt = new DataTable();
+		    var computed = dt.Compute(formula, "");
+		    return computed.ToString();
+	    }
+
+	    public string ToString(Grammer formula)
+	    {
+		    return formula.Formula;
+	    }
+	}
 }

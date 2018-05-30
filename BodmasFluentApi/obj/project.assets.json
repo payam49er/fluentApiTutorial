@@ -664,28 +664,30 @@
     ]
   },
   "packageFolders": {
-    "/Users/payam/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\payam\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/payam/RiderProjects/BodmasFluentApi/BodmasFluentApi/BodmasFluentApi.csproj",
+      "projectUniqueName": "C:\\Users\\payam\\source\\repos\\fluentApiTutorial\\BodmasFluentApi\\BodmasFluentApi.csproj",
       "projectName": "BodmasFluentApi",
-      "projectPath": "/Users/payam/RiderProjects/BodmasFluentApi/BodmasFluentApi/BodmasFluentApi.csproj",
-      "packagesPath": "/Users/payam/.nuget/packages/",
-      "outputPath": "/Users/payam/RiderProjects/BodmasFluentApi/BodmasFluentApi/obj/",
+      "projectPath": "C:\\Users\\payam\\source\\repos\\fluentApiTutorial\\BodmasFluentApi\\BodmasFluentApi.csproj",
+      "packagesPath": "C:\\Users\\payam\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\payam\\source\\repos\\fluentApiTutorial\\BodmasFluentApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/payam/.config/NuGet/NuGet.Config"
+        "C:\\Users\\payam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -703,7 +705,6 @@
       "netcoreapp2.0": {
         "dependencies": {
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true

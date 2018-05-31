@@ -1,6 +1,12 @@
-﻿################################################################################
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
 /.vs/BodmasFluentApi/v15/Server/sqlite3
 /BodmasFluentApi/obj/Debug/netcoreapp2.0/BodmasFluentApi.csproj.FileListAbsolute.txt
+*.dll
+*.pdb
+*.cache
+.vs/BodmasFluentApi/v15/.suo
+BodmasFluentApi/bin/
+BodmasFluentApi/obj/

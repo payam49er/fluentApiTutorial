@@ -8,6 +8,7 @@
         <e p="BodMas.cs" t="Include" />
         <e p="BodmasFluentApi.csproj" t="IncludeRecursive" />
         <e p="Extension.cs" t="Include" />
+        <e p="Grammer.cs" t="Include" />
         <e p="IBodMas.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -16,6 +17,7 @@
             </e>
           </e>
         </e>
+        <e p="OperationsInterface.cs" t="Include" />
         <e p="Program.cs" t="Include" />
       </e>
       <e p="BodmasFluentApi.sln" t="IncludeFlat" />

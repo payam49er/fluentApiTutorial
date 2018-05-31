@@ -1,35 +1,19 @@
-﻿namespace BodmasFluentApi
+﻿using System.Data;
+
+namespace BodmasFluentApi
 {
-    public class BodMas:IBodMas
+	public class BodMas:IBodMas
     {
-        public static void Execute(BodMas formula)
-        {
-            throw new System.NotImplementedException();
-        }
+		public string Execute(string formula)
+	    {
+		    DataTable dt = new DataTable();
+		    var computed = dt.Compute(formula, "");
+		    return computed.ToString();
+	    }
 
-        public static void ToString(BodMas formula)
-        {
-            
-        }
-
-        public IBodMas Brakets(IBodMas value)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public IBodMas Add(IBodMas value)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public IBodMas Subtract(IBodMas value)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public IBodMas Divide(IBodMas value)
-        {
-            throw new System.NotImplementedException();
-        }
-    }
+	    public string ToString(Grammer formula)
+	    {
+		    return formula.Formula;
+	    }
+	}
 }

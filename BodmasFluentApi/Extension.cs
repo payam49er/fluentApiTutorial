@@ -4,25 +4,45 @@ namespace BodmasFluentApi
 {
     public static class Extension
     {
-        public static BodMas Add(this int integer)
+        private static Grammer _grammer = new Grammer();
+        public static IAddOrSubtract Add(this int integer, int value)
         {
-            return new BodMas();
-        }
-        
-        public static BodMas Subtract(this int integer)
-        {
-            return new BodMas();
+            return _grammer.Add(integer,value);
         }
 
-        public static BodMas Multiply(this int integer)
+	    public static IAddOrSubtract Add(this int value)
+	    {
+		    return _grammer.Add(value);
+	    }
+
+	    public static IAddOrSubtract Subtract(this int integer, int value)
         {
-            return new BodMas();
+            return _grammer.Subtract(integer, value);
         }
 
-        public static BodMas Divide(this int integer)
+	    public static IAddOrSubtract Subtract(this int value)
+	    {
+		    return _grammer.Subtract(value);
+	    }
+
+        public static IMultiplyOrDivide Multiply(this int integer, int value)
         {
-            return new BodMas();
+            return _grammer.Multiply(integer,value);
         }
-            
+
+	    public static IMultiplyOrDivide Multiply(this int value)
+	    {
+		    return _grammer.Multiply(value);
+	    }
+
+	    public static IMultiplyOrDivide Divide(this int value)
+	    {
+		    return _grammer.Divide(value);
+	    }
+
+        public static IMultiplyOrDivide Divide(this int integer, int value)
+        {
+            return _grammer.Divide(integer, value);
+        }
     }
 }
